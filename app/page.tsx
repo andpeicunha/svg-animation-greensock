@@ -1,91 +1,87 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+"use client";
 
-const inter = Inter({ subsets: ['latin'] })
+import { motion } from "framer-motion";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <div className="flex min-h-screen w-full justify-center align-middle items-center">
+        <div id="black" className="w-[90%]">
+          <motion.svg
+            viewBox="0 0 480 126.627"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+            <motion.path
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{
+                delay: 0,
+                duration: 8,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "loop",
+                repeatDelay: 1,
+              }}
+              strokeWidth={3}
+              strokeDasharray="0 1"
+              stroke-linecap="round"
+              stroke="black"
+              fill="none"
+              d="m39.064 63.419 -18.572 -36.722 -18.572 36.722m4.01 -8.02h29.124m13.528 8.02v-36.722l31.024 36.722v-36.722m42.631 18.361c0 10.13 -6.964 18.361 -17.095 18.361h-16.461v-36.722h16.461c10.13 0 17.095 8.231 17.095 18.361 0 0 0 0 0 0m37.777 18.255 -11.819 -15.195m-16.673 0h17.728c5.909 0 10.763 -4.749 10.763 -10.658s-4.854 -10.763 -10.763 -10.763h-17.728V63.313m62.469 0.106h-24.481v-36.722h24.481m-24.481 18.361h20.893m33.894 18.255V26.697h15.195c6.542 0 11.819 5.276 11.819 11.819s-5.276 11.713 -11.819 11.713h-15.195m60.485 13.19h-24.481v-36.722h24.481m-24.481 18.361h20.893m13.296 18.382v-36.722m10.341 -0.232 30.179 36.827m0 -36.827 -30.179 36.827m59.515 -39.36c10.974 0 19.627 8.864 19.627 19.838 0 10.763 -8.653 19.627 -19.627 19.627 -10.763 0 -19.627 -8.864 -19.627 -19.627 0 -10.974 8.864 -19.838 19.627 -19.838m44.108 39.36V26.697m-15.406 0h30.813m28.702 -2.744c10.974 0 19.627 8.864 19.627 19.838 0 10.763 -8.653 19.627 -19.627 19.627 -10.763 0 -19.627 -8.864 -19.627 -19.627 0 -10.974 8.864 -19.838 19.627 -19.838"
             />
-          </a>
+          </motion.svg>
+        </div>
+        <div id="blue" className="fixed w-[90%]">
+          <motion.svg
+            viewBox="0 0 480 126.627"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <motion.path
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{
+                delay: 0.5,
+                duration: 7,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "loop",
+                repeatDelay: 1,
+              }}
+              strokeWidth={3}
+              strokeDasharray="0 1"
+              stroke-linecap="round"
+              stroke="blue"
+              fill="none"
+              d="m39.064 63.419 -18.572 -36.722 -18.572 36.722m4.01 -8.02h29.124m13.528 8.02v-36.722l31.024 36.722v-36.722m42.631 18.361c0 10.13 -6.964 18.361 -17.095 18.361h-16.461v-36.722h16.461c10.13 0 17.095 8.231 17.095 18.361 0 0 0 0 0 0m37.777 18.255 -11.819 -15.195m-16.673 0h17.728c5.909 0 10.763 -4.749 10.763 -10.658s-4.854 -10.763 -10.763 -10.763h-17.728V63.313m62.469 0.106h-24.481v-36.722h24.481m-24.481 18.361h20.893m33.894 18.255V26.697h15.195c6.542 0 11.819 5.276 11.819 11.819s-5.276 11.713 -11.819 11.713h-15.195m60.485 13.19h-24.481v-36.722h24.481m-24.481 18.361h20.893m13.296 18.382v-36.722m10.341 -0.232 30.179 36.827m0 -36.827 -30.179 36.827m59.515 -39.36c10.974 0 19.627 8.864 19.627 19.838 0 10.763 -8.653 19.627 -19.627 19.627 -10.763 0 -19.627 -8.864 -19.627 -19.627 0 -10.974 8.864 -19.838 19.627 -19.838m44.108 39.36V26.697m-15.406 0h30.813m28.702 -2.744c10.974 0 19.627 8.864 19.627 19.838 0 10.763 -8.653 19.627 -19.627 19.627 -10.763 0 -19.627 -8.864 -19.627 -19.627 0 -10.974 8.864 -19.838 19.627 -19.838"
+            />
+          </motion.svg>
+        </div>
+        <div id="red" className="fixed w-[90%]">
+          <motion.svg
+            viewBox="0 0 480 126.627"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <motion.path
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{
+                delay: 1,
+                duration: 7,
+                ease: "easeInOut",
+                repeat: Infinity,
+                repeatType: "loop",
+                repeatDelay: 1,
+              }}
+              strokeWidth={3.1}
+              strokeDasharray="0 1"
+              stroke-linecap="round"
+              stroke="red"
+              fill="none"
+              d="m39.064 63.419 -18.572 -36.722 -18.572 36.722m4.01 -8.02h29.124m13.528 8.02v-36.722l31.024 36.722v-36.722m42.631 18.361c0 10.13 -6.964 18.361 -17.095 18.361h-16.461v-36.722h16.461c10.13 0 17.095 8.231 17.095 18.361 0 0 0 0 0 0m37.777 18.255 -11.819 -15.195m-16.673 0h17.728c5.909 0 10.763 -4.749 10.763 -10.658s-4.854 -10.763 -10.763 -10.763h-17.728V63.313m62.469 0.106h-24.481v-36.722h24.481m-24.481 18.361h20.893m33.894 18.255V26.697h15.195c6.542 0 11.819 5.276 11.819 11.819s-5.276 11.713 -11.819 11.713h-15.195m60.485 13.19h-24.481v-36.722h24.481m-24.481 18.361h20.893m13.296 18.382v-36.722m10.341 -0.232 30.179 36.827m0 -36.827 -30.179 36.827m59.515 -39.36c10.974 0 19.627 8.864 19.627 19.838 0 10.763 -8.653 19.627 -19.627 19.627 -10.763 0 -19.627 -8.864 -19.627 -19.627 0 -10.974 8.864 -19.838 19.627 -19.838m44.108 39.36V26.697m-15.406 0h30.813m28.702 -2.744c10.974 0 19.627 8.864 19.627 19.838 0 10.763 -8.653 19.627 -19.627 19.627 -10.763 0 -19.627 -8.864 -19.627 -19.627 0 -10.974 8.864 -19.838 19.627 -19.838"
+            />
+          </motion.svg>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </>
+  );
 }

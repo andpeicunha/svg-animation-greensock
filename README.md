@@ -1,6 +1,6 @@
 Animando arquivos SVG com Framer Motion.
 
-
+![Animation SVG Framer Motion](https://github.com/andpeicunha/svg-animation-greensock/blob/main/public/exemplo-svg-animation,jpg.png?raw=true)
 
 ## Fase 1
 
